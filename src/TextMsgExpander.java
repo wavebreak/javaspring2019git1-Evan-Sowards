@@ -12,7 +12,26 @@ public class TextMsgExpander {
         System.out.println("");
 
         // Check for abbreviations
-       
+        if (userLine.indexOf("BFF") != -1) {
+            userLine = userLine.replace("BFF","best friends forever");
+        }
+
+        if (userLine.indexOf("IDK") != -1) {
+            userLine = userLine.replace("IDK","I don't know");
+        }
+
+        if (userLine.indexOf("JK") != -1) {
+            userLine = userLine.replace("JK","just kidding");
+        }
+
+        if (userLine.indexOf("TMI") != -1) {
+            userLine = userLine.replace("TMI","too much information");
+        }
+
+        if (userLine.indexOf("TTYL") != -1) {
+            userLine = userLine.replace("TTYL","talk to you later");
+        }
+
 
         // Output expanded text
         System.out.println("");
